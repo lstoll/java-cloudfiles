@@ -52,6 +52,9 @@ public class FilesResponse
     	if (getStatusCode() == HttpStatus.SC_NO_CONTENT)    
     		return true;
 
+    	if (getStatusCode() == HttpStatus.SC_OK)    
+    		return true;
+
     	return false;     
     }
 
